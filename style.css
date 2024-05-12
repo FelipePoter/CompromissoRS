@@ -1,0 +1,142 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Cor de fundo do corpo */
+    color: #333; /* Cor do texto padrão */
+}
+
+header {
+    background-color: #212529; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto no cabeçalho */
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* Cor dos links de navegação */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave da cor do texto ao passar o mouse */
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Cor dos links de navegação ao passar o mouse */
+}
+
+main {
+    padding: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ol li {
+    margin: 2rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #212529; /* Cor do título da seção */
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #343a40; /* Linha de separação na parte inferior do título da seção */
+}
+
+.subsection-title {
+    font-size: 2rem;
+    color: #282d31; /* Cor do título da subseção */
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #212529; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    text-align: center;
+    padding: 1rem;
+}
+
+.header-image-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.header-image {
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.header-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    max-height: 70%; /* Define a altura máxima da caixa de texto em relação à altura da imagem */
+    overflow: auto; /* Adiciona uma barra de rolagem caso o conteúdo ultrapasse a altura máxima */
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    z-index: 1; /* Garante que a caixa de texto fique acima da imagem */
+}
+
+.header-image-text .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #fff; /* Linha de separação na parte inferior do título da seção */
+}
+
+.header-image-text .section-title, .header-image-text p {
+    color: #fff;
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    .header-image-text {
+        max-width: 90%;
+        max-height: 30%; /* Ajuste a altura máxima para dispositivos móveis conforme necessário */
+    }
+}
+
+.depoimento {
+    margin: 1rem 0;
+}
+
+#informacoes-emergencia ul li {
+    margin: 1rem 0;
+}
+
+#informacoes-emergencia h3 a {
+    margin: 1rem 0;
+}
+
+#informacoes-emergencia h2{
+    margin: 1rem 0;
+}
